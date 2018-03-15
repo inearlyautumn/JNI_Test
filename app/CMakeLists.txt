@@ -22,6 +22,15 @@ cmake_minimum_required(VERSION 3.4.1)#--指定CMake的版本
 #--             src/main/jni/player.cpp
 
 add_library( # Sets the name of the library.
+             JNITestSample
+
+             # Sets the library as a shared library.
+             SHARED
+
+             # Provides a relative path to your source file(s).
+             src/main/jni/com_jni_test001_JNIUtil.cpp)
+
+add_library( # Sets the name of the library.
              native-lib
 
              # Sets the library as a shared library.
