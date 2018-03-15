@@ -20,4 +20,6 @@ public class JniDemo {
 
     //需要动态注册的方法
     public static native Application getApplicationObject();
+
+    public native String stringFromJNI();
 }
