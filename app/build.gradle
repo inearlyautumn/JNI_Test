@@ -11,7 +11,7 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {
-                cppFlags ""
+                cppFlags ""//这里指定编译的一些C++选项
             }
         }
     }
@@ -23,7 +23,7 @@ android {
     }
     externalNativeBuild {
         cmake {
-            path "CMakeLists.txt"
+            path "CMakeLists.txt"//这里指定了配置文件的路径在项目目录下，文件名叫做CMakeLists.text.
         }
     }
 }
